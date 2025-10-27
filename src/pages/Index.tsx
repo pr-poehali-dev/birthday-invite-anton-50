@@ -76,21 +76,95 @@ export default function Index() {
                 <h2 className="text-5xl font-semibold text-foreground">Антон</h2>
               </div>
             </div>
-
-            <div className="pt-8 space-y-3">
-              <div className="flex items-center justify-center gap-3 text-lg">
-                <Icon name="Calendar" size={20} className="text-primary" />
-                <p className="text-foreground font-medium">29 ноября 2025</p>
-              </div>
-              <div className="flex items-center justify-center gap-3 text-lg">
-                <Icon name="Clock" size={20} className="text-primary" />
-                <p className="text-foreground font-medium">Сбор гостей 15:30–16:00</p>
-              </div>
-            </div>
           </div>
         </section>
 
         <section className="px-4 py-20 space-y-12">
+          <Card className="p-8 bg-card/80 backdrop-blur-sm border-primary/20 shadow-lg animate-fade-in">
+            <div className="space-y-6 text-center">
+              <h3 className="text-3xl font-semibold text-foreground">Дорогие друзья!</h3>
+              <p className="text-foreground leading-relaxed text-lg">
+                Совсем скоро наступит значимый для меня день — мне исполнится 50 лет! Я бы очень хотел разделить его с вами, моими самыми любимыми и близкими людьми. Приглашаю на свой Birthday party!
+              </p>
+            </div>
+          </Card>
+
+          <Card className="p-8 bg-card/80 backdrop-blur-sm border-primary/20 shadow-lg animate-fade-in">
+            <div className="space-y-6">
+              <div className="flex items-center gap-3 pb-4 border-b border-border">
+                <Icon name="Calendar" size={28} className="text-primary" />
+                <h3 className="text-3xl font-semibold text-foreground">Дата</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 text-lg">
+                  <Icon name="CalendarDays" size={20} className="text-primary" />
+                  <p className="text-foreground font-medium">29 ноября 2025</p>
+                </div>
+                <div className="flex items-center gap-3 text-lg">
+                  <Icon name="Clock" size={20} className="text-primary" />
+                  <p className="text-foreground font-medium">Сбор гостей 15:30–16:00</p>
+                </div>
+                
+                <div className="pt-4">
+                  <div className="bg-background/50 rounded-lg p-6 border border-border">
+                    <div className="text-center mb-4">
+                      <p className="text-lg font-semibold text-foreground">Ноябрь 2025</p>
+                    </div>
+                    <div className="grid grid-cols-7 gap-2 text-center">
+                      <div className="text-xs text-muted-foreground font-medium p-2">Пн</div>
+                      <div className="text-xs text-muted-foreground font-medium p-2">Вт</div>
+                      <div className="text-xs text-muted-foreground font-medium p-2">Ср</div>
+                      <div className="text-xs text-muted-foreground font-medium p-2">Чт</div>
+                      <div className="text-xs text-muted-foreground font-medium p-2">Пт</div>
+                      <div className="text-xs text-muted-foreground font-medium p-2">Сб</div>
+                      <div className="text-xs text-muted-foreground font-medium p-2">Вс</div>
+                      
+                      <div className="p-2"></div>
+                      <div className="p-2"></div>
+                      <div className="p-2"></div>
+                      <div className="p-2"></div>
+                      <div className="p-2"></div>
+                      <div className="p-2 text-muted-foreground">1</div>
+                      <div className="p-2 text-muted-foreground">2</div>
+                      
+                      <div className="p-2 text-muted-foreground">3</div>
+                      <div className="p-2 text-muted-foreground">4</div>
+                      <div className="p-2 text-muted-foreground">5</div>
+                      <div className="p-2 text-muted-foreground">6</div>
+                      <div className="p-2 text-muted-foreground">7</div>
+                      <div className="p-2 text-muted-foreground">8</div>
+                      <div className="p-2 text-muted-foreground">9</div>
+                      
+                      <div className="p-2 text-muted-foreground">10</div>
+                      <div className="p-2 text-muted-foreground">11</div>
+                      <div className="p-2 text-muted-foreground">12</div>
+                      <div className="p-2 text-muted-foreground">13</div>
+                      <div className="p-2 text-muted-foreground">14</div>
+                      <div className="p-2 text-muted-foreground">15</div>
+                      <div className="p-2 text-muted-foreground">16</div>
+                      
+                      <div className="p-2 text-muted-foreground">17</div>
+                      <div className="p-2 text-muted-foreground">18</div>
+                      <div className="p-2 text-muted-foreground">19</div>
+                      <div className="p-2 text-muted-foreground">20</div>
+                      <div className="p-2 text-muted-foreground">21</div>
+                      <div className="p-2 text-muted-foreground">22</div>
+                      <div className="p-2 text-muted-foreground">23</div>
+                      
+                      <div className="p-2 text-muted-foreground">24</div>
+                      <div className="p-2 text-muted-foreground">25</div>
+                      <div className="p-2 text-muted-foreground">26</div>
+                      <div className="p-2 text-muted-foreground">27</div>
+                      <div className="p-2 text-muted-foreground">28</div>
+                      <div className="p-2 rounded-lg bg-primary text-primary-foreground font-bold shadow-lg">29</div>
+                      <div className="p-2 text-muted-foreground">30</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
           <Card className="p-8 bg-card/80 backdrop-blur-sm border-primary/20 shadow-lg animate-fade-in">
             <div className="space-y-6">
               <div className="flex items-center gap-3 pb-4 border-b border-border">
@@ -208,6 +282,19 @@ export default function Index() {
                   <div className="w-12 h-12 rounded-lg bg-[#D3E4FD] shadow-md border border-border"></div>
                 </div>
               </div>
+            </div>
+          </Card>
+
+          <Card className="p-8 bg-card/80 backdrop-blur-sm border-primary/20 shadow-lg animate-fade-in">
+            <div className="space-y-6">
+              <div className="flex items-center gap-3 pb-4 border-b border-border">
+                <Icon name="Gift" size={28} className="text-primary" />
+                <h3 className="text-3xl font-semibold text-foreground">Что дарить?</h3>
+              </div>
+              
+              <p className="text-foreground leading-relaxed">
+                Я знаю, как тяжело определиться с выбором подарка на любое торжество. Поэтому буду рад вашим пожеланиям в конвертах, ведь именно они помогут мне исполнить самые заветные желания!
+              </p>
             </div>
           </Card>
 
