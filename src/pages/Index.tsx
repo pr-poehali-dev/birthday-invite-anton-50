@@ -126,13 +126,31 @@ export default function Index() {
                 <h3 className="text-3xl font-semibold text-foreground">Локация</h3>
               </div>
               
-              <div className="space-y-3">
-                <p className="text-lg text-foreground font-medium">Ресторан "Русь"</p>
-                <p className="text-muted-foreground">г. Гаврилов-Ям, ул. Советская, д. 28</p>
-                <div className="pt-4">
-                  <Button variant="outline" className="w-full sm:w-auto">
+              <div className="space-y-4">
+                <div>
+                  <p className="text-lg text-foreground font-medium">Ресторан "Русь"</p>
+                  <p className="text-muted-foreground">г. Гаврилов-Ям, ул. Советская, д. 28</p>
+                </div>
+                
+                <div className="relative w-full h-[300px] rounded-lg overflow-hidden border border-border shadow-md">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=39.854665%2C57.302488&z=16&pt=39.854665,57.302488,pm2rdm"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
+                
+                <div className="pt-2">
+                  <Button 
+                    variant="outline" 
+                    className="w-full sm:w-auto"
+                    onClick={() => window.open('https://yandex.ru/maps/?pt=39.854665,57.302488&z=16&l=map', '_blank')}
+                  >
                     <Icon name="Navigation" size={18} className="mr-2" />
-                    Посмотреть на карте
+                    Открыть в Яндекс.Картах
                   </Button>
                 </div>
               </div>
