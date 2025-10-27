@@ -197,9 +197,9 @@ export default function Index() {
               
               <div className="space-y-4">
                 <p className="text-foreground leading-relaxed">
-                  Приглашаем в элегантной вечерней одежде в пастельных оттенках
+                  Предполагается праздничный стиль одежды, но мы будем рады, если вы поддержите нашу цветовую гамму в пастельных оттенках
                 </p>
-                <div className="flex gap-3 pt-2">
+                <div className="flex gap-3 pt-2 flex-wrap">
                   <div className="w-12 h-12 rounded-lg bg-[#F2FCE2] shadow-md border border-border"></div>
                   <div className="w-12 h-12 rounded-lg bg-[#FEF7CD] shadow-md border border-border"></div>
                   <div className="w-12 h-12 rounded-lg bg-[#FEC6A1] shadow-md border border-border"></div>
