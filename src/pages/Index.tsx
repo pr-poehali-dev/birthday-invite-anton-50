@@ -84,7 +84,7 @@ export default function Index() {
               </div>
               <div className="flex items-center justify-center gap-3 text-lg">
                 <Icon name="Clock" size={20} className="text-primary" />
-                <p className="text-foreground font-medium">Сбор гостей в 15:30</p>
+                <p className="text-foreground font-medium">Сбор гостей 15:30–16:00</p>
               </div>
             </div>
           </div>
