@@ -14,14 +14,45 @@ export default function Index() {
     attendance: '',
     companion: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Спасибо за ответ!",
-      description: "Мы получили вашу заявку. До встречи на празднике!",
-    });
-    setFormData({ name: '', attendance: '', companion: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://functions.poehali.dev/a690f5ed-b00d-4a0c-ab74-05b0c39ac0ed', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast({
+          title: "Спасибо за ответ!",
+          description: "Мы получили вашу заявку. До встречи на празднике!",
+        });
+        setFormData({ name: '', attendance: '', companion: '' });
+      } else {
+        toast({
+          title: "Ошибка",
+          description: data.error || "Не удалось отправить ответ. Попробуйте ещё раз.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить ответ. Проверьте подключение к интернету.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -245,8 +276,9 @@ export default function Index() {
                   type="submit" 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
                   size="lg"
+                  disabled={isSubmitting}
                 >
-                  Отправить ответ
+                  {isSubmitting ? 'Отправка...' : 'Отправить ответ'}
                 </Button>
               </form>
             </div>
