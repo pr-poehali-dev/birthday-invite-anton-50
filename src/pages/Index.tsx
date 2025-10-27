@@ -32,7 +32,7 @@ export default function Index() {
           <div className="text-center space-y-8 animate-fade-in">
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-primary/20">
               <img 
-                src="https://cdn.poehali.dev/projects/9ef1ad7d-5b83-415a-bbee-790e94b8fbf0/files/393eaa22-50b5-4543-b0cc-e1b160e7221e.jpg"
+                src="https://cdn.poehali.dev/files/dbaadb48-f6e9-4f0c-9fc1-568d6b062a66.jpg"
                 alt="Детское фото"
                 className="w-full h-full object-cover"
               />
@@ -53,7 +53,7 @@ export default function Index() {
               </div>
               <div className="flex items-center justify-center gap-3 text-lg">
                 <Icon name="Clock" size={20} className="text-primary" />
-                <p className="text-foreground font-medium">Начало в 16:00</p>
+                <p className="text-foreground font-medium">Сбор гостей в 15:30</p>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Index() {
               
               <div className="space-y-5">
                 <div className="flex gap-4 items-start">
-                  <span className="font-semibold text-primary text-lg min-w-[70px]">16:00</span>
+                  <span className="font-semibold text-primary text-lg min-w-[70px]">15:30</span>
                   <div>
                     <p className="font-medium text-foreground">Сбор гостей</p>
                     <p className="text-sm text-muted-foreground">Встреча и приветствие</p>
@@ -77,7 +77,7 @@ export default function Index() {
                 </div>
                 
                 <div className="flex gap-4 items-start">
-                  <span className="font-semibold text-primary text-lg min-w-[70px]">17:00</span>
+                  <span className="font-semibold text-primary text-lg min-w-[70px]">16:00</span>
                   <div>
                     <p className="font-medium text-foreground">Начало праздника</p>
                     <p className="text-sm text-muted-foreground">Поздравления и тосты</p>
@@ -85,18 +85,34 @@ export default function Index() {
                 </div>
                 
                 <div className="flex gap-4 items-start">
-                  <span className="font-semibold text-primary text-lg min-w-[70px]">18:00</span>
+                  <span className="font-semibold text-primary text-lg min-w-[70px]">17:00</span>
                   <div>
-                    <p className="font-medium text-foreground">Праздничный ужин</p>
-                    <p className="text-sm text-muted-foreground">Вкусные блюда и общение</p>
+                    <p className="font-medium text-foreground">Развлекательная программа</p>
+                    <p className="text-sm text-muted-foreground">Музыка и веселье</p>
                   </div>
                 </div>
                 
                 <div className="flex gap-4 items-start">
                   <span className="font-semibold text-primary text-lg min-w-[70px]">20:00</span>
                   <div>
-                    <p className="font-medium text-foreground">Развлекательная программа</p>
-                    <p className="text-sm text-muted-foreground">Музыка, танцы и веселье</p>
+                    <p className="font-medium text-foreground">Торт</p>
+                    <p className="text-sm text-muted-foreground">Праздничный торт и поздравления</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <span className="font-semibold text-primary text-lg min-w-[70px]">21:00</span>
+                  <div>
+                    <p className="font-medium text-foreground">Дискотека</p>
+                    <p className="text-sm text-muted-foreground">Танцы до упаду</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-start">
+                  <span className="font-semibold text-primary text-lg min-w-[70px]">22:00</span>
+                  <div>
+                    <p className="font-medium text-foreground">Завершение праздника</p>
+                    <p className="text-sm text-muted-foreground">До новых встреч!</p>
                   </div>
                 </div>
               </div>
@@ -111,8 +127,8 @@ export default function Index() {
               </div>
               
               <div className="space-y-3">
-                <p className="text-lg text-foreground font-medium">Ресторан "Панорама"</p>
-                <p className="text-muted-foreground">г. Москва, ул. Пушкина, д. 15</p>
+                <p className="text-lg text-foreground font-medium">Ресторан "Русь"</p>
+                <p className="text-muted-foreground">г. Гаврилов-Ям, ул. Советская, д. 28</p>
                 <div className="pt-4">
                   <Button variant="outline" className="w-full sm:w-auto">
                     <Icon name="Navigation" size={18} className="mr-2" />
@@ -132,14 +148,15 @@ export default function Index() {
               
               <div className="space-y-4">
                 <p className="text-foreground leading-relaxed">
-                  Приглашаем в элегантной вечерней одежде в природных тонах
+                  Приглашаем в элегантной вечерней одежде в пастельных оттенках
                 </p>
                 <div className="flex gap-3 pt-2">
-                  <div className="w-12 h-12 rounded-lg bg-[#8B7355] shadow-md border border-white/20"></div>
-                  <div className="w-12 h-12 rounded-lg bg-[#5A6B4C] shadow-md border border-white/20"></div>
-                  <div className="w-12 h-12 rounded-lg bg-[#D4C4B0] shadow-md border border-white/20"></div>
-                  <div className="w-12 h-12 rounded-lg bg-[#2C3E2F] shadow-md border border-white/20"></div>
-                  <div className="w-12 h-12 rounded-lg bg-[#A0826D] shadow-md border border-white/20"></div>
+                  <div className="w-12 h-12 rounded-lg bg-[#F2FCE2] shadow-md border border-border"></div>
+                  <div className="w-12 h-12 rounded-lg bg-[#FEF7CD] shadow-md border border-border"></div>
+                  <div className="w-12 h-12 rounded-lg bg-[#FEC6A1] shadow-md border border-border"></div>
+                  <div className="w-12 h-12 rounded-lg bg-[#E5DEFF] shadow-md border border-border"></div>
+                  <div className="w-12 h-12 rounded-lg bg-[#FFDEE2] shadow-md border border-border"></div>
+                  <div className="w-12 h-12 rounded-lg bg-[#D3E4FD] shadow-md border border-border"></div>
                 </div>
               </div>
             </div>
@@ -158,12 +175,12 @@ export default function Index() {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-foreground">Ваше имя</Label>
+                  <Label htmlFor="name" className="text-foreground">Имя и Фамилия</Label>
                   <Input
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Введите ваше имя"
+                    placeholder="Иван Иванов"
                     required
                     className="bg-background/50"
                   />
@@ -200,7 +217,7 @@ export default function Index() {
                       id="companion"
                       value={formData.companion}
                       onChange={(e) => setFormData({ ...formData, companion: e.target.value })}
-                      placeholder="Имя сопровождающего"
+                      placeholder="С семьёй / с невестой / один"
                       className="bg-background/50"
                     />
                   </div>
